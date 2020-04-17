@@ -19,144 +19,92 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"/deploy/img/footer/facebook.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/deploy/img/footer/facebook.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/deploy/img/footer/instagram.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/deploy/img/footer/instagram.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/deploy/img/footer/twitter.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/deploy/img/footer/twitter.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/deploy/img/section-1/hero.jpg": {
-		"ft": 16384,
-		"iS": 337746,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/section-1/hero.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/section-2/hero.png": {
+	"/deploy/img/footer/logo.png": {
 		"ft": 32768,
-		"iS": 21385,
+		"iS": 2294,
 		"oA": 0,
-		"oAP": "/deploy/img/section-2/hero.png",
+		"oAP": "/deploy/img/footer/logo.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/deploy/img/section-3/grid-bot.jpg": {
+	"/deploy/img/section-1/hero.png": {
+		"ft": 32768,
+		"iS": 828744,
+		"oA": 0,
+		"oAP": "/deploy/img/section-1/hero.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/section-2/waterfall.png": {
+		"ft": 32768,
+		"iS": 644626,
+		"oA": 0,
+		"oAP": "/deploy/img/section-2/waterfall.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/section-3/beach.png": {
+		"ft": 32768,
+		"iS": 1198789,
+		"oA": 0,
+		"oAP": "/deploy/img/section-3/beach.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/section-4/fireshow.jpg": {
 		"ft": 16384,
-		"iS": 185897,
+		"iS": 264466,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/section-3/grid-bot.jpg",
+		"oAP": "/deploy/img/section-4/fireshow.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/section-4/hero.jpg": {
+	"/deploy/img/section-4/food.jpg": {
 		"ft": 16384,
-		"iS": 189024,
+		"iS": 236560,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/section-4/hero.jpg",
+		"oAP": "/deploy/img/section-4/food.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/section-5/gallery-1.jpg": {
-		"ft": 16384,
-		"iS": 173696,
-		"jF": 0,
+	"/deploy/img/section-4/temple.png": {
+		"ft": 32768,
+		"iS": 913400,
 		"oA": 0,
-		"oAP": "/deploy/img/section-5/gallery-1.jpg",
+		"oAP": "/deploy/img/section-4/temple.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
-	"/deploy/img/section-5/gallery-2.jpg": {
-		"ft": 16384,
-		"iS": 47796,
-		"jF": 0,
+	"/deploy/img/section-5/boat.png": {
+		"ft": 32768,
+		"iS": 181901,
 		"oA": 0,
-		"oAP": "/deploy/img/section-5/gallery-2.jpg",
+		"oAP": "/deploy/img/section-5/boat.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/section-5/gallery-3.jpg": {
-		"ft": 16384,
-		"iS": 100411,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/section-5/gallery-3.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/section-5/gallery-4.jpg": {
-		"ft": 16384,
-		"iS": 170027,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/section-5/gallery-4.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/section-5/gallery-5.jpg": {
-		"ft": 16384,
-		"iS": 70439,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/section-5/gallery-5.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/section-5/gallery-6.jpg": {
-		"ft": 16384,
-		"iS": 115782,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/section-5/gallery-6.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"/deploy/index.html": {
@@ -403,7 +351,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 608749270.97778797,
-	"displayValue": "in-class-AM",
+	"displayValue": "week2-homework",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets-pale",
 	"iconImageWasSetByUser": 0
