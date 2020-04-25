@@ -317,6 +317,11 @@ template {
 /* =============
     Base
 ============= */
+ul {
+  padding: 0; }
+  ul li {
+    list-style: none; }
+
 /* =============
     Typography
 ============= */
@@ -350,18 +355,53 @@ textarea {
 /* =============
     Sectoin 1
 ============= */
-#section-1 img {
+#section-1-content {
+  display: grid;
+  grid-template-columns: 30% auto 15%;
+  grid-template-areas: ". section-1-content ."; }
+  #section-1-content #section-1-header {
+    grid-area: section-1-content; }
+
+#section-1-image img {
   width: 100%; }
 
 /* =============
     Sectoin 2
 ============= */
+#section-2 {
+  display: grid;
+  grid-template-columns: 15px auto 15px;
+  grid-template-areas: ". section-2 ."; }
+  #section-2 #secton-2-content {
+    grid-area: section-2; }
+
+#section-2-image img {
+  width: 100%; }
+
 /* =============
     Sectoin 3
 ============= */
+#section-3 img {
+  width: 100%; }
+
 /* =============
     Sectoin 4
 ============= */
+section-4 {
+  display: grid;
+  grid-template-columns: 15px auto 15px;
+  grid-template-areas: ". section-4 ."; }
+  section-4 #section-4-content {
+    grid-area: section-4; }
+
+#section-4-gallery img {
+  width: 100%; }
+
+#section-4-gallery ul {
+  grid-area: section-4-gallery;
+  display: grid;
+  gap: 20px; }
+
 /* =============
     Sectoin 5
 ============= */

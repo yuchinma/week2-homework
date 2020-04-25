@@ -63,26 +63,26 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/deploy/img/section-4/fireshow.jpg": {
-		"ft": 16384,
-		"iS": 264466,
-		"jF": 0,
+	"/deploy/img/section-4/fireshow.png": {
+		"ft": 32768,
+		"iS": 255138,
 		"oA": 0,
-		"oAP": "/deploy/img/section-4/fireshow.jpg",
+		"oAP": "/deploy/img/section-4/fireshow.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
-	"/deploy/img/section-4/food.jpg": {
-		"ft": 16384,
-		"iS": 236560,
-		"jF": 0,
+	"/deploy/img/section-4/food.png": {
+		"ft": 32768,
+		"iS": 232542,
 		"oA": 0,
-		"oAP": "/deploy/img/section-4/food.jpg",
+		"oAP": "/deploy/img/section-4/food.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"/deploy/img/section-4/temple.png": {
@@ -91,8 +91,8 @@
 		"oA": 0,
 		"oAP": "/deploy/img/section-4/temple.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},

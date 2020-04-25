@@ -1,7 +1,17 @@
 /* =============
     Sectoin 1
 ============= */
-#section-1 {
+#section-1-content{
+    display: grid;
+    grid-template-columns: 30% auto 15%;
+    grid-template-areas: ". section-1-content .";
+
+    #section-1-header{
+        grid-area: section-1-content;
+    }
+}
+
+#section-1-image{
     img{
         width: 100%
     }
