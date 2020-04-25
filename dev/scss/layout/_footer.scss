@@ -1,3 +1,20 @@
 /* =============
     Footer
 ============= */
+footer{
+    display: grid;
+    grid-template-columns: 5% auto 85%;
+    grid-template-areas: ". footer .";
+
+    #footer-image{
+        grid-area: footer;
+    }
+
+    display: grid;
+    grid-template-columns: 85% auto 5%;
+    grid-template-areas: ". footer .";
+
+    #footer-copyright{
+        grid-area: footer;
+    }
+}

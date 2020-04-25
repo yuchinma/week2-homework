@@ -352,6 +352,18 @@ textarea {
 /* =============
     Footer
 ============= */
+footer {
+  display: grid;
+  grid-template-columns: 5% auto 85%;
+  grid-template-areas: ". footer .";
+  display: grid;
+  grid-template-columns: 85% auto 5%;
+  grid-template-areas: ". footer ."; }
+  footer #footer-image {
+    grid-area: footer; }
+  footer #footer-copyright {
+    grid-area: footer; }
+
 /* =============
     Sectoin 1
 ============= */
@@ -387,11 +399,11 @@ textarea {
 /* =============
     Sectoin 4
 ============= */
-section-4 {
+#section-4 {
   display: grid;
   grid-template-columns: 15px auto 15px;
   grid-template-areas: ". section-4 ."; }
-  section-4 #section-4-content {
+  #section-4 #section-4-content {
     grid-area: section-4; }
 
 #section-4-gallery img {
@@ -405,3 +417,12 @@ section-4 {
 /* =============
     Sectoin 5
 ============= */
+#section-5 {
+  display: grid;
+  grid-template-columns: 15px auto 15px;
+  grid-template-areas: ". section-5 ."; }
+  #section-5 #section-5-content {
+    grid-area: section-5; }
+
+#section-5-image img {
+  width: 100%; }
