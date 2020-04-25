@@ -417,12 +417,12 @@ footer {
 /* =============
     Sectoin 5
 ============= */
-#section-5 {
+#section-5 aside img {
+  width: 100%; }
+
+#section-5 section {
   display: grid;
   grid-template-columns: 15px auto 15px;
   grid-template-areas: ". section-5 ."; }
-  #section-5 #section-5-content {
+  #section-5 section #section-5-content {
     grid-area: section-5; }
-
-#section-5-image img {
-  width: 100%; }

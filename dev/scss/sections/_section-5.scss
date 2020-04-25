@@ -1,18 +1,46 @@
 /* =============
     Sectoin 5
 ============= */
+// #section-5{
+//     display: grid;
+//     grid-template-columns: 15px auto 15px;
+//     grid-template-areas: ". section-5 .";
+
+//     #section-5-content{
+//         grid-area: section-5;
+//     }
+// }
+
+// #section-5-2{
+//     display: grid;
+//     grid-template-columns: 25px auto 5px;
+//     grid-template-areas: ". section-5-2 .";
+
+//     #section-5-image{
+//         grid-area: section-5-2;
+//     }
+// }
+
+// #section-5-image{
+//     img{
+//         width: 100%;
+//     }
+// }
+
 #section-5{
-    display: grid;
-    grid-template-columns: 15px auto 15px;
-    grid-template-areas: ". section-5 .";
-
-    #section-5-content{
-        grid-area: section-5;
+    aside{
+        img{
+            width: 100%;
+        }
     }
-}
 
-#section-5-image{
-    img{
-        width: 100%;
+    section{
+        display: grid;
+        grid-template-columns: 15px auto 15px;
+        grid-template-areas: ". section-5 .";
+
+        #section-5-content{
+            grid-area: section-5;
+        }
     }
 }
