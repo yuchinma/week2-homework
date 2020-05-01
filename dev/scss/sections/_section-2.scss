@@ -2,17 +2,25 @@
     Sectoin 2
 ============= */
 #section-2{
-    display: grid;
-    grid-template-columns: 15px auto 15px;
-    grid-template-areas: ". section-2 .";
 
-    #secton-2-content{
-        grid-area: section-2;
+    @include md{
+        display: grid;
+        grid-template-columns: 35% auto;
     }
-}
 
-#section-2-image{
-    img{
-        width: 100%;
+    aside{
+        img{
+            width: 100%;
+        }
+    }
+
+    #section-2-container{
+        display: grid;
+        grid-template-columns: 15px auto 15px;
+        grid-template-areas: ". section-2 .";
+
+        #section-2-content{
+            grid-area: section-2;
+        }
     }
 }

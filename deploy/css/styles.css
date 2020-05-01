@@ -369,7 +369,7 @@ footer {
 ============= */
 #section-1-content {
   display: grid;
-  grid-template-columns: 30% auto 15%;
+  grid-template-columns: 20% auto 20;
   grid-template-areas: ". section-1-content ."; }
   #section-1-content #section-1-header {
     grid-area: section-1-content; }
@@ -380,15 +380,20 @@ footer {
 /* =============
     Sectoin 2
 ============= */
-#section-2 {
+@media (min-width: 768px) {
+  #section-2 {
+    display: grid;
+    grid-template-columns: 35% auto; } }
+
+#section-2 aside img {
+  width: 100%; }
+
+#section-2 #section-2-container {
   display: grid;
   grid-template-columns: 15px auto 15px;
   grid-template-areas: ". section-2 ."; }
-  #section-2 #secton-2-content {
+  #section-2 #section-2-container #section-2-content {
     grid-area: section-2; }
-
-#section-2-image img {
-  width: 100%; }
 
 /* =============
     Sectoin 3
