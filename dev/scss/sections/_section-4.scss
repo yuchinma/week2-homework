@@ -6,6 +6,10 @@
     grid-template-columns: 15px auto 15px;
     grid-template-areas: ". section-4 .";
 
+    @include md{
+        grid-template-columns: 20% auto 20%;
+    }
+
     #section-4-content{
         grid-area: section-4;
     }
