@@ -20,16 +20,6 @@
         width: 100%;
     }
 
-#img-1{
-    grid-area: temple;
-}
-#img-2{
-    grid-area: food;
-}
-#img-3{
-    grid-area: firework;
-}
-
     ul{
         grid-area: section-4-gallery;
         display: grid;
@@ -45,6 +35,16 @@
             "food firework";
 
             gap: 10px;
+
+            #img-1{
+                grid-area: temple;
+            }
+            #img-2{
+                grid-area: food;
+            }
+            #img-3{
+                grid-area: firework;
+            }
         }
     }
 }

@@ -417,15 +417,6 @@ footer {
 #section-4-gallery img {
   width: 100%; }
 
-#section-4-gallery #img-1 {
-  grid-area: temple; }
-
-#section-4-gallery #img-2 {
-  grid-area: food; }
-
-#section-4-gallery #img-3 {
-  grid-area: firework; }
-
 #section-4-gallery ul {
   grid-area: section-4-gallery;
   display: grid;
@@ -435,14 +426,35 @@ footer {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(3, 1fr);
       grid-template-areas: "temple temple" "temple temple" "food firework";
-      gap: 10px; } }
+      gap: 10px; }
+      #section-4-gallery ul #img-1 {
+        grid-area: temple; }
+      #section-4-gallery ul #img-2 {
+        grid-area: food; }
+      #section-4-gallery ul #img-3 {
+        grid-area: firework; } }
 /* =============
     Sectoin 5
 ============= */
-#section-5 aside img {
-  width: 100%; }
-
-@media (min-width: 768px) {
+#section-5 {
+  display: grid;
+  grid-template-columns: 15px auto 15px;
+  grid-template-areas: ". section-5 ."; }
   #section-5 aside img {
-    text-align: center;
-    width: 80%; } }
+    width: 100%; }
+  @media (min-width: 768px) {
+    #section-5 aside {
+      display: grid;
+      grid-template-columns: auto 70% auto;
+      grid-template-areas: ". boat ."; }
+      #section-5 aside #section-5-content {
+        grid-area: boat; } }
+  #section-5 #section-5-container {
+    grid-area: section-5; }
+  @media (min-width: 768px) {
+    #section-5 {
+      display: grid;
+      grid-template-columns: 10% auto 10%;
+      grid-template-areas: ". section-5 ."; }
+      #section-5 #section-5-container {
+        grid-area: section-5; } }

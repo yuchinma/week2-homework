@@ -8,18 +8,31 @@
         }
 
         @include md{
-            img{
-                text-align: center;
-                width: 80%;
-            }
+           display: grid;
+           grid-template-columns: auto 70% auto;
+           grid-template-areas: ". boat .";
+
+           #section-5-content{
+               grid-area: boat;
+           }
+        }
+    }
+
+        display: grid;
+        grid-template-columns: 15px auto 15px;
+        grid-template-areas: ". section-5 .";
+    
+        #section-5-container{
+            grid-area: section-5;
         }
 
-        // display: grid;
-        // grid-template-columns: 15px auto 15px;
-        // grid-template-areas: ". section-5 .";
+        @include md{
+            display: grid;
+            grid-template-columns: 10% auto 10%;
+            grid-template-areas: ". section-5 .";
     
-        // #section-5-container{
-        //     grid-area: section-5;
-        // }
+        #section-5-container{
+            grid-area: section-5;
+        }
     }
 }  
