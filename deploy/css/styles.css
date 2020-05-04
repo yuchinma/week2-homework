@@ -353,6 +353,7 @@ textarea {
     Footer
 ============= */
 footer {
+  background-color: #262F4C;
   display: grid;
   grid-template-columns: 5% auto 85%;
   grid-template-areas: ". footer .";
@@ -363,7 +364,20 @@ footer {
     grid-area: footer; }
   footer #footer-copyright {
     grid-area: footer; }
-
+  @media (min-width: 768px) {
+    footer {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas: ". logo copyright"; }
+      footer #footer-image {
+        grid-area: logo;
+        justify-self: center;
+        align-self: center; }
+      footer #footer-copyright {
+        color: white;
+        grid-area: copyright;
+        justify-self: right;
+        padding-right: 10px; } }
 /* =============
     Sectoin 1
 ============= */
@@ -473,3 +487,11 @@ footer {
       grid-template-areas: ". section-5 ."; }
       #section-5 #section-5-container {
         grid-area: section-5; } }
+  @media (min-width: 992px) {
+    #section-5 {
+      grid-template-columns: 20% 80%;
+      grid-template-areas: "boat para"; }
+      #section-5 #section-5-content {
+        grid-area: boat; }
+      #section-5 #section-5-content h4 {
+        grid-area: para; } }

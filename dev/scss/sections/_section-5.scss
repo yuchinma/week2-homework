@@ -36,13 +36,15 @@
         }
     }
 
-    // @include lg{
-    //     display: grid;
-    //     grid-template-columns: 20% 80%;
-    //     grid-template-areas: "aside para";
+        @include lg{
+            #section-5-content{
+                grid-area: boat;
+            }
+            #section-5-content h4{
+                grid-area: para;
+            }
 
-    //     #section-5-container{
-    //         grid-area: aside para;
-    //     }
-    // }
+            grid-template-columns: 20% 80%;
+            grid-template-areas: "boat para";
+        }
 }  

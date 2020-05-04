@@ -2,6 +2,8 @@
     Footer
 ============= */
 footer{
+    background-color: #262F4C;
+
     display: grid;
     grid-template-columns: 5% auto 85%;
     grid-template-areas: ". footer .";
@@ -16,5 +18,24 @@ footer{
 
     #footer-copyright{
         grid-area: footer;
+    }
+
+    @include md{
+        #footer-image{
+            grid-area: logo;
+            justify-self: center;
+            align-self: center;
+            // border: 3px solid black;
+        }
+        #footer-copyright{
+            color: white;
+            grid-area: copyright;
+            justify-self: right;
+            padding-right: 10px;
+        }
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: ". logo copyright";
     }
 }
