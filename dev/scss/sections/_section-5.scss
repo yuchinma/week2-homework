@@ -6,54 +6,58 @@
         img{
             width: 100%;
         }
-
-        @include md{
-           display: grid;
-           grid-template-columns: auto 70% auto;
-           grid-template-areas: ". boat .";
-
-           #section-5-content{
-               grid-area: boat;
-           }
-        }
     }
 
+    @include md{
         display: grid;
-        grid-template-columns: 15px auto 15px;
+        grid-template-columns: auto 70% auto;
+        grid-template-areas: ". boat .";
+
+        #section-5-content{
+            grid-area: boat;
+        }
+     }
+
+    display: grid;
+    grid-template-columns: 15px auto 15px;
+    grid-template-areas: ". section-5 .";
+
+    #section-5-container{
+        grid-area: section-5;
+    }
+
+    @include md{
+        display: grid;
+        grid-template-columns: 10% auto 10%;
         grid-template-areas: ". section-5 .";
-    
+
         #section-5-container{
             grid-area: section-5;
         }
 
-        @include md{
+        #section-5-content{
+            width: 100%;
+        }
+    }
+
+    @include lg{
+        #section-5-content{
+            grid-area: boat;
+        }
+        h4{
+            grid-area: para;
+        }
+
+        #section-5-container{
             display: grid;
-            grid-template-columns: 10% auto 10%;
-            grid-template-areas: ". section-5 .";
-    
-            #section-5-container{
-                grid-area: section-5;
-            }
+            grid-template-columns: 40% 60%;
+            grid-template-areas: "boat para";
+
+            grid-area: section-5;
         }
 
-        @include lg{
-            #section-5-content{
-                grid-area: boat;
-            }
-            h4{
-                grid-area: para;
-            }
-
-            #section-5-container{
-                display: grid;
-                grid-template-columns: 40% 60%;
-                grid-template-areas: "boat para";
-
-                grid-area: section-5;
-            }
-
-            #section-5-content{
-                width: 300%;
-            }
+        #section-5-content{
+            width: 100%;
         }
+    }
 }  

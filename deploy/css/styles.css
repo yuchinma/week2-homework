@@ -355,15 +355,17 @@ textarea {
 footer {
   background-color: #262F4C;
   display: grid;
-  grid-template-columns: 5% auto 85%;
-  grid-template-areas: ". footer .";
-  display: grid;
-  grid-template-columns: 85% auto 5%;
-  grid-template-areas: ". footer ."; }
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "logo . copyright"; }
   footer #footer-image {
-    grid-area: footer; }
+    grid-area: logo;
+    justify-self: left;
+    padding-left: 10px; }
   footer #footer-copyright {
-    grid-area: footer; }
+    color: white;
+    grid-area: copyright;
+    justify-self: right;
+    padding-right: 10px; }
   @media (min-width: 768px) {
     footer {
       display: grid;
@@ -472,11 +474,11 @@ footer {
   #section-5 aside img {
     width: 100%; }
   @media (min-width: 768px) {
-    #section-5 aside {
+    #section-5 {
       display: grid;
       grid-template-columns: auto 70% auto;
       grid-template-areas: ". boat ."; }
-      #section-5 aside #section-5-content {
+      #section-5 #section-5-content {
         grid-area: boat; } }
   #section-5 #section-5-container {
     grid-area: section-5; }
@@ -486,7 +488,9 @@ footer {
       grid-template-columns: 10% auto 10%;
       grid-template-areas: ". section-5 ."; }
       #section-5 #section-5-container {
-        grid-area: section-5; } }
+        grid-area: section-5; }
+      #section-5 #section-5-content {
+        width: 100%; } }
   @media (min-width: 992px) {
     #section-5 #section-5-content {
       grid-area: boat; }
@@ -498,4 +502,4 @@ footer {
       grid-template-areas: "boat para";
       grid-area: section-5; }
     #section-5 #section-5-content {
-      width: 300%; } }
+      width: 100%; } }

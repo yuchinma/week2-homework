@@ -4,21 +4,21 @@
 footer{
     background-color: #262F4C;
 
-    display: grid;
-    grid-template-columns: 5% auto 85%;
-    grid-template-areas: ". footer .";
-
     #footer-image{
-        grid-area: footer;
+        grid-area: logo;
+        justify-self: left;
+        padding-left: 10px;
+    }
+    #footer-copyright{
+        color: white;
+        grid-area: copyright;
+        justify-self: right;
+        padding-right: 10px;
     }
 
     display: grid;
-    grid-template-columns: 85% auto 5%;
-    grid-template-areas: ". footer .";
-
-    #footer-copyright{
-        grid-area: footer;
-    }
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "logo . copyright";
 
     @include md{
         #footer-image{
