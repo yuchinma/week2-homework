@@ -3,11 +3,6 @@
 ============= */
 #section-2{
 
-    @include md{
-        display: grid;
-        grid-template-columns: 35% auto;
-    }
-
     aside{
         img{
             width: 100%;
@@ -22,5 +17,15 @@
         #section-2-content{
             grid-area: para;
         }
+    }
+
+    @include md{
+        display: grid;
+        grid-template-columns: 35% auto;
+    }
+
+    @include lg{
+        display: grid;
+        grid-template-columns: 45% auto;
     }
 }

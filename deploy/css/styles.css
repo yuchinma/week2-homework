@@ -380,11 +380,6 @@ footer {
 /* =============
     Sectoin 2
 ============= */
-@media (min-width: 768px) {
-  #section-2 {
-    display: grid;
-    grid-template-columns: 35% auto; } }
-
 #section-2 aside img {
   width: 100%; }
 
@@ -394,6 +389,16 @@ footer {
   grid-template-areas: ". para ."; }
   #section-2 #section-2-container #section-2-content {
     grid-area: para; }
+
+@media (min-width: 768px) {
+  #section-2 {
+    display: grid;
+    grid-template-columns: 35% auto; } }
+
+@media (min-width: 992px) {
+  #section-2 {
+    display: grid;
+    grid-template-columns: 45% auto; } }
 
 /* =============
     Sectoin 3
