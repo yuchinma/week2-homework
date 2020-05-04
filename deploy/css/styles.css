@@ -488,10 +488,14 @@ footer {
       #section-5 #section-5-container {
         grid-area: section-5; } }
   @media (min-width: 992px) {
-    #section-5 {
-      grid-template-columns: 20% 80%;
-      grid-template-areas: "boat para"; }
-      #section-5 #section-5-content {
-        grid-area: boat; }
-      #section-5 #section-5-content h4 {
-        grid-area: para; } }
+    #section-5 #section-5-content {
+      grid-area: boat; }
+    #section-5 h4 {
+      grid-area: para; }
+    #section-5 #section-5-container {
+      display: grid;
+      grid-template-columns: 40% 60%;
+      grid-template-areas: "boat para";
+      grid-area: section-5; }
+    #section-5 #section-5-content {
+      width: 300%; } }
