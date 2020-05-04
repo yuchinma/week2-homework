@@ -27,20 +27,10 @@
 
     ul{
         grid-area: section-4-gallery;
-        display: grid;
         gap: 20px;
 
-        #img-1{
-            grid-area: temple;
-        }
-        #img-2{
-            grid-area: food;
-        }
-        #img-3{
-            grid-area: firework;
-        }
-
         @include md{
+            display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(3, 1fr);
 
@@ -50,6 +40,16 @@
             "food firework";
 
             gap: 10px;
+
+            #img-1{
+                grid-area: temple;
+            }
+            #img-2{
+                grid-area: food;
+            }
+            #img-3{
+                grid-area: firework;
+            }
         }
 
         @include lg{

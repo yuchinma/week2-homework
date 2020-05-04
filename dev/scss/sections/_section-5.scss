@@ -35,4 +35,14 @@
             grid-area: section-5;
         }
     }
+
+    // @include lg{
+    //     display: grid;
+    //     grid-template-columns: 20% 80%;
+    //     grid-template-areas: "aside para";
+
+    //     #section-5-container{
+    //         grid-area: aside para;
+    //     }
+    // }
 }  

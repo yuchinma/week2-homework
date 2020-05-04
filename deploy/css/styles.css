@@ -393,7 +393,9 @@ footer {
 @media (min-width: 768px) {
   #section-2 {
     display: grid;
-    grid-template-columns: 35% auto; } }
+    grid-template-columns: 35% auto;
+    margin-top: 20px;
+    margin-bottom: 20px; } }
 
 @media (min-width: 992px) {
   #section-2 {
@@ -426,20 +428,20 @@ footer {
 
 #section-4-gallery ul {
   grid-area: section-4-gallery;
-  display: grid;
   gap: 20px; }
-  #section-4-gallery ul #img-1 {
-    grid-area: temple; }
-  #section-4-gallery ul #img-2 {
-    grid-area: food; }
-  #section-4-gallery ul #img-3 {
-    grid-area: firework; }
   @media (min-width: 768px) {
     #section-4-gallery ul {
+      display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(3, 1fr);
       grid-template-areas: "temple temple" "temple temple" "food firework";
-      gap: 10px; } }
+      gap: 10px; }
+      #section-4-gallery ul #img-1 {
+        grid-area: temple; }
+      #section-4-gallery ul #img-2 {
+        grid-area: food; }
+      #section-4-gallery ul #img-3 {
+        grid-area: firework; } }
   @media (min-width: 992px) {
     #section-4-gallery ul {
       grid-template-columns: 70% 30%;

@@ -22,6 +22,8 @@
     @include md{
         display: grid;
         grid-template-columns: 35% auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     @include lg{
