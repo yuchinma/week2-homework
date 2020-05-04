@@ -7,22 +7,19 @@
             width: 100%;
         }
 
-        // @include md{
-        //     display: grid;
-        //     grid-template-columns: 30% auto 30%;
-        //     grid-template-areas: ". aside .";
+        @include md{
+            img{
+                text-align: center;
+                width: 80%;
+            }
+        }
 
-        //     #section-5-content{
-        //         grid-area: aside;
-        //     }
+        // display: grid;
+        // grid-template-columns: 15px auto 15px;
+        // grid-template-areas: ". section-5 .";
+    
+        // #section-5-container{
+        //     grid-area: section-5;
         // }
     }
-
-        display: grid;
-        grid-template-columns: 15px auto 15px;
-        grid-template-areas: ". section-5 .";
-    
-        #section-5-container{
-            grid-area: section-5;
-        }
-}
+}  

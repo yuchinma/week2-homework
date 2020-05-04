@@ -20,31 +20,31 @@
         width: 100%;
     }
 
+#img-1{
+    grid-area: temple;
+}
+#img-2{
+    grid-area: food;
+}
+#img-3{
+    grid-area: firework;
+}
+
     ul{
         grid-area: section-4-gallery;
         display: grid;
         gap: 20px;
 
-        // @include md{
-        //     grid-template-columns: repeat(2, 1fr);
+        @include md{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
 
-        //     grid-template-areas: 
-        //     "img-1 img-1"
-        //     "img-1 img-1"
-        //     "img-2 img-3";
-        // }
+            grid-template-areas: 
+            "temple temple"
+            "temple temple"
+            "food firework";
 
-        // li{
-        //     img{
-        //         width: 100%;
-        //     }
-        // }
-
-        // @include xl{
-        //     grid-template-columns: repeat(2, 1fr);
-        //     grid-template-areas: 
-        //     "img-1 img-2"
-        //     "img-1 img-3";
-        // }
+            gap: 10px;
+        }
     }
 }
