@@ -6,13 +6,18 @@
     grid-template-columns: 15px auto 15px;
     grid-template-areas: ". section-4 .";
 
+    #section-4-content{
+        grid-area: section-4;
+    }
+
     @include md{
         grid-template-columns: 20% auto 20%;
     }
 
-    #section-4-content{
-        grid-area: section-4;
+    @include lg{
+        grid-template-columns: 10% auto 10%;
     }
+
 }
 
 #section-4-gallery{
@@ -25,6 +30,16 @@
         display: grid;
         gap: 20px;
 
+        #img-1{
+            grid-area: temple;
+        }
+        #img-2{
+            grid-area: food;
+        }
+        #img-3{
+            grid-area: firework;
+        }
+
         @include md{
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(3, 1fr);
@@ -35,16 +50,17 @@
             "food firework";
 
             gap: 10px;
+        }
 
-            #img-1{
-                grid-area: temple;
-            }
-            #img-2{
-                grid-area: food;
-            }
-            #img-3{
-                grid-area: firework;
-            }
+        @include lg{
+            grid-template-columns: 70% 30%;
+            grid-template-rows: repeat(2, 1fr);
+
+            grid-template-areas: 
+            "temple food"
+            "temple firework";
+
+            gap: 10px;
         }
     }
 }

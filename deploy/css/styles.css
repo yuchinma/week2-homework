@@ -413,12 +413,14 @@ footer {
   display: grid;
   grid-template-columns: 15px auto 15px;
   grid-template-areas: ". section-4 ."; }
+  #section-4 #section-4-content {
+    grid-area: section-4; }
   @media (min-width: 768px) {
     #section-4 {
       grid-template-columns: 20% auto 20%; } }
-  #section-4 #section-4-content {
-    grid-area: section-4; }
-
+  @media (min-width: 992px) {
+    #section-4 {
+      grid-template-columns: 10% auto 10%; } }
 #section-4-gallery img {
   width: 100%; }
 
@@ -426,18 +428,24 @@ footer {
   grid-area: section-4-gallery;
   display: grid;
   gap: 20px; }
+  #section-4-gallery ul #img-1 {
+    grid-area: temple; }
+  #section-4-gallery ul #img-2 {
+    grid-area: food; }
+  #section-4-gallery ul #img-3 {
+    grid-area: firework; }
   @media (min-width: 768px) {
     #section-4-gallery ul {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(3, 1fr);
       grid-template-areas: "temple temple" "temple temple" "food firework";
-      gap: 10px; }
-      #section-4-gallery ul #img-1 {
-        grid-area: temple; }
-      #section-4-gallery ul #img-2 {
-        grid-area: food; }
-      #section-4-gallery ul #img-3 {
-        grid-area: firework; } }
+      gap: 10px; } }
+  @media (min-width: 992px) {
+    #section-4-gallery ul {
+      grid-template-columns: 70% 30%;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: "temple food" "temple firework";
+      gap: 10px; } }
 /* =============
     Sectoin 5
 ============= */
