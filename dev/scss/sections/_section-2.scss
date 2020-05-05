@@ -22,8 +22,17 @@
     @include md{
         display: grid;
         grid-template-columns: 35% auto;
+        grid-template-areas: "img para";
         margin-top: 20px;
         margin-bottom: 20px;
+
+        aside{
+            grid-area: img;
+        }
+
+        #section-2-content{
+            align-self: center;
+        }
     }
 
     @include lg{

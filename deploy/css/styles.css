@@ -410,8 +410,13 @@ footer {
   #section-2 {
     display: grid;
     grid-template-columns: 35% auto;
+    grid-template-areas: "img para";
     margin-top: 20px;
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+    #section-2 aside {
+      grid-area: img; }
+    #section-2 #section-2-content {
+      align-self: center; } }
 
 @media (min-width: 992px) {
   #section-2 {
