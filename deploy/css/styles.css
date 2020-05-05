@@ -482,7 +482,10 @@ footer {
       #section-5 #section-5-container {
         grid-area: section-5; }
       #section-5 aside img {
-        width: 100%; } }
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%; } }
   @media (min-width: 992px) {
     #section-5 aside {
       grid-area: boat; }
