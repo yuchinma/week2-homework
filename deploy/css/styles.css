@@ -359,7 +359,7 @@ footer {
   grid-template-areas: "logo . copyright"; }
   footer #footer-image {
     grid-area: logo;
-    justify-self: left;
+    align-self: center;
     padding-left: 10px; }
   footer #footer-copyright {
     color: white;
@@ -372,14 +372,7 @@ footer {
       grid-template-columns: repeat(3, 1fr);
       grid-template-areas: ". logo copyright"; }
       footer #footer-image {
-        grid-area: logo;
-        justify-self: center;
-        align-self: center; }
-      footer #footer-copyright {
-        color: white;
-        grid-area: copyright;
-        justify-self: right;
-        padding-right: 10px; } }
+        justify-self: center; } }
 /* =============
     Sectoin 1
 ============= */

@@ -6,7 +6,7 @@ footer{
 
     #footer-image{
         grid-area: logo;
-        justify-self: left;
+        align-self: center;
         padding-left: 10px;
     }
     #footer-copyright{
@@ -22,18 +22,9 @@ footer{
 
     @include md{
         #footer-image{
-            grid-area: logo;
             justify-self: center;
-            align-self: center;
-            // border: 3px solid black;
         }
-        #footer-copyright{
-            color: white;
-            grid-area: copyright;
-            justify-self: right;
-            padding-right: 10px;
-        }
-
+        
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas: ". logo copyright";
