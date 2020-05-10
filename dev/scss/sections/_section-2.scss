@@ -4,14 +4,22 @@
 #section-2{
 
     aside{
-        img{
-            width: 100%;
-        }
+        // img{
+        //     width: 100%;
+        // }
 
-        // background-image: url('../img/section-2/elephant.png');
-        // background-size: cover;
-        // background-position: center;
-        // height: 480px;
+        background-image: url('../img/section-2/elephant.png');
+        background-size: cover;
+        background-position: center;
+        height: 480px;
+
+        @include md {
+            height: 417px;
+          }
+        
+        @include lg {
+            height: 737px;
+        }
     }
 
     #section-2-container{
