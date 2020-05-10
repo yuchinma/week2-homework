@@ -325,6 +325,9 @@ ul {
 /* =============
     Typography
 ============= */
+body {
+  font-family: 'Kalam', cursive; }
+
 /* =============
     Buttons
 ============= */
@@ -376,6 +379,17 @@ footer {
 /* =============
     Sectoin 1
 ============= */
+#section-1-image {
+  background-image: url("../img/section-1/hero.png");
+  background-size: cover;
+  background-position: center;
+  height: 370px; }
+  @media (min-width: 768px) {
+    #section-1-image {
+      height: 512px; } }
+  @media (min-width: 992px) {
+    #section-1-image {
+      height: 683px; } }
 #section-1-content {
   display: grid;
   grid-template-columns: 20% auto 20;
@@ -383,9 +397,10 @@ footer {
   #section-1-content #section-1-header {
     grid-area: section-1-content;
     justify-self: center; }
-
-#section-1-image img {
-  width: 100%; }
+    #section-1-content #section-1-header h1 {
+      font-family: 'Kalam', cursive;
+      font-weight: 700;
+      font-size: 2em; }
 
 /* =============
     Sectoin 2
@@ -420,9 +435,18 @@ footer {
 /* =============
     Sectoin 3
 ============= */
-#section-3 img {
-  width: 100%; }
-
+#section-3 {
+  background-image: url("../img/section-3/beach.png");
+  background-size: cover;
+  background-position: -230px, 0;
+  height: 511px; }
+  @media (min-width: 768px) {
+    #section-3 {
+      background-position: left;
+      height: 511px; } }
+  @media (min-width: 992px) {
+    #section-3 {
+      height: 682px; } }
 /* =============
     Sectoin 4
 ============= */
@@ -488,13 +512,13 @@ footer {
         width: 50%; } }
   @media (min-width: 992px) {
     #section-5 aside {
-      grid-area: boat; }
+      grid-area: model; }
     #section-5 #section-5-content {
       grid-area: para; }
     #section-5 #section-5-container {
       display: grid;
       grid-template-columns: 35% 5% 60%;
-      grid-template-areas: "boat . ." "boat . para" "boat . .";
+      grid-template-areas: "model . ." "model . para" "model . .";
       grid-area: section-5; } }
   @media (min-width: 1200px) {
     #section-5 {

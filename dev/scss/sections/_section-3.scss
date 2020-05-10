@@ -2,7 +2,21 @@
     Sectoin 3
 ============= */
 #section-3{
-    img{
-        width: 100%;
+    // img{
+    //     width: 100%;
+    // }
+
+    background-image: url('../img/section-3/beach.png');
+    background-size: cover;
+    background-position: -230px, 0;
+    height: 511px;
+  
+    @include md {
+      background-position: left;
+      height: 511px;
+    }
+  
+    @include lg {
+      height: 682px;
     }
 }

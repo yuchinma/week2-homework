@@ -325,6 +325,9 @@ ul {
 /* =============
     Typography
 ============= */
+body {
+  font-family: 'Kalam', cursive; }
+
 /* =============
     Buttons
 ============= */
@@ -376,6 +379,9 @@ footer {
 /* =============
     Sectoin 1
 ============= */
+#section-1-image img {
+  width: 100%; }
+
 #section-1-content {
   display: grid;
   grid-template-columns: 20% auto 20;
@@ -383,9 +389,10 @@ footer {
   #section-1-content #section-1-header {
     grid-area: section-1-content;
     justify-self: center; }
-
-#section-1-image img {
-  width: 100%; }
+    #section-1-content #section-1-header h1 {
+      font-family: 'Kalam', cursive;
+      font-weight: 700;
+      font-size: 2em; }
 
 /* =============
     Sectoin 2
