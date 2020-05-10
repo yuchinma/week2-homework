@@ -37,7 +37,7 @@
 
     @include lg{
         aside{
-            grid-area: boat;
+            grid-area: model;
         }
         #section-5-content{
             grid-area: para;
@@ -47,9 +47,9 @@
             display: grid;
             grid-template-columns: 35% 5% 60%;
             grid-template-areas: 
-            "boat . ."
-            "boat . para"
-            "boat . .";
+            "model . ."
+            "model . para"
+            "model . .";
 
             grid-area: section-5;
         }
