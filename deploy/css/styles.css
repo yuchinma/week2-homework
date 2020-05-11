@@ -356,6 +356,41 @@ textarea {
 /* =============
     Header
 ============= */
+header {
+  background-color: #262F4C;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: #262F4C; }
+  header > div {
+    display: grid;
+    grid-template-columns: 80% auto;
+    grid-template-areas: "logo burger" "nav nav"; }
+    @media (min-width: 992px) {
+      header > div {
+        grid-template-columns: 20% auto;
+        grid-template-areas: "logo nav"; } }
+    header > div #logo-container {
+      align-items: center;
+      display: flex;
+      grid-area: burger;
+      justify-content: flex-end;
+      padding: 20px; }
+      @media (min-width: 992px) {
+        header > div #logo-container {
+          display: none !important; } }
+      header > div #logo-container i {
+        cursor: pointer; }
+    header > div #nav-container {
+      background-color: white;
+      display: none;
+      grid-area: nav;
+      padding: 20px; }
+      @media (min-width: 992px) {
+        header > div #nav-container {
+          background-color: white;
+          display: none !important; } }
 /* =============
     Footer
 ============= */

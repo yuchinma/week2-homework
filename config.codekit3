@@ -146,9 +146,9 @@
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/dev/header.html",
-		"oF": 0
+		"oF": 1
 		},
 	"/dev/index.kit": {
 		"cB": 0,
@@ -371,7 +371,7 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/dev/scss/styles-min.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 3
 		},
 	"/dev/scss/styles.scss": {

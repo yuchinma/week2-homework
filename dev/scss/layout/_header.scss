@@ -1,3 +1,52 @@
 /* =============
     Header
 ============= */
+header {
+    background-color: $blue;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: $blue;
+
+    >div{
+        display: grid;
+        grid-template-columns: 80% auto;
+        grid-template-areas: 
+        "logo burger"
+        "nav nav";
+
+        @include lg{
+            grid-template-columns: 20% auto;
+            grid-template-areas: "logo nav";
+        }
+
+        #logo-container{
+            align-items: center;
+            display: flex;
+            grid-area: burger;
+            justify-content: flex-end;
+            padding: 20px;
+
+            @include lg{
+                display: none !important;
+            }
+
+            i {
+                cursor: pointer;
+            }
+        }
+
+        #nav-container{
+            background-color: white;
+            display: none;
+            grid-area: nav;
+            padding: 20px;
+
+            @include lg{
+                background-color: white;
+                display: none !important;
+            }
+        }
+    }
+}
