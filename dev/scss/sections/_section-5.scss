@@ -8,6 +8,24 @@
         }
     }
 
+    p{
+        font-size: rem-calc(19);
+        text-align: justify;
+        line-height: rem-calc(25);
+
+        @include md{
+            font-size: rem-calc(20);
+            text-align: justify;
+            line-height: rem-calc(25);
+        }
+
+        @include lg{
+            font-size: rem-calc(23);
+            text-align: justify;
+            line-height: rem-calc(30);
+        }
+    }
+
     display: grid;
     grid-template-columns: 15px auto 15px;
     grid-template-areas: ". section-5 .";

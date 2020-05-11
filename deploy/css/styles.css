@@ -564,6 +564,20 @@ footer {
   grid-template-areas: ". section-5 ."; }
   #section-5 aside img {
     width: 100%; }
+  #section-5 p {
+    font-size: 1.1875rem;
+    text-align: justify;
+    line-height: 1.5625rem; }
+    @media (min-width: 768px) {
+      #section-5 p {
+        font-size: 1.25rem;
+        text-align: justify;
+        line-height: 1.5625rem; } }
+    @media (min-width: 992px) {
+      #section-5 p {
+        font-size: 1.4375rem;
+        text-align: justify;
+        line-height: 1.875rem; } }
   #section-5 #section-5-container {
     grid-area: section-5; }
   @media (min-width: 768px) {
