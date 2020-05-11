@@ -12,6 +12,7 @@
         font-size: rem-calc(19);
         text-align: justify;
         line-height: rem-calc(25);
+        color: $blue;
 
         @include md{
             font-size: rem-calc(20);

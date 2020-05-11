@@ -406,6 +406,7 @@ footer {
       font-family: 'Kalam', cursive;
       font-weight: 700;
       font-size: 2.8125rem;
+      color: #262F4C;
       position: absolute;
       top: 30px;
       left: 30px;
@@ -446,7 +447,8 @@ footer {
     #section-2 #section-2-container #section-2-content h3 {
       font-size: 1.75rem;
       text-align: center;
-      padding: 10px; }
+      padding: 10px;
+      color: #262F4C; }
       @media (min-width: 768px) {
         #section-2 #section-2-container #section-2-content h3 {
           text-align: left; } }
@@ -456,7 +458,9 @@ footer {
     #section-2 #section-2-container #section-2-content h5 {
       font-size: 1.125rem;
       text-align: center;
-      padding: 10px; }
+      font-weight: 400;
+      padding: 10px;
+      color: #262F4C; }
       @media (min-width: 768px) {
         #section-2 #section-2-container #section-2-content h5 {
           text-align: left; } }
@@ -509,7 +513,8 @@ footer {
     #section-4 #section-4-content h2 {
       font-size: 1.5625rem;
       text-align: center;
-      padding: 10px; }
+      padding: 10px;
+      color: #262F4C; }
       @media (min-width: 768px) {
         #section-4 #section-4-content h2 {
           font-size: 2.25rem;
@@ -567,7 +572,8 @@ footer {
   #section-5 p {
     font-size: 1.1875rem;
     text-align: justify;
-    line-height: 1.5625rem; }
+    line-height: 1.5625rem;
+    color: #262F4C; }
     @media (min-width: 768px) {
       #section-5 p {
         font-size: 1.25rem;
