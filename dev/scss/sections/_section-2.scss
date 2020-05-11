@@ -27,6 +27,14 @@
         grid-template-columns: 15px auto 15px;
         grid-template-areas: ". para .";
 
+        h3{
+            margin: 10px, 0, 10px;
+        }
+
+        h5{
+            margin: 10px, 0, 10px;
+        }
+
         #section-2-content{
             grid-area: para;
         }

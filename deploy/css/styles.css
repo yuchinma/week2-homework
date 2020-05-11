@@ -328,6 +328,10 @@ ul {
 body {
   font-family: 'Kalam', cursive; }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
 /* =============
     Buttons
 ============= */
@@ -380,6 +384,7 @@ footer {
     Sectoin 1
 ============= */
 #section-1-image {
+  position: relative;
   background-image: url("../img/section-1/hero.png");
   background-size: cover;
   background-position: center;
@@ -400,8 +405,23 @@ footer {
     #section-1-content #section-1-header h1 {
       font-family: 'Kalam', cursive;
       font-weight: 700;
-      font-size: 2em; }
-
+      font-size: 2.8125rem;
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      width: 100%; }
+      @media (min-width: 768px) {
+        #section-1-content #section-1-header h1 {
+          font-size: 4.375rem;
+          position: absolute;
+          top: 40px;
+          left: 40px; } }
+      @media (min-width: 992px) {
+        #section-1-content #section-1-header h1 {
+          font-size: 6.25rem;
+          position: absolute;
+          top: 50px;
+          left: 60px; } }
 /* =============
     Sectoin 2
 ============= */
@@ -420,6 +440,10 @@ footer {
   display: grid;
   grid-template-columns: 15px auto 15px;
   grid-template-areas: ". para ."; }
+  #section-2 #section-2-container h3 {
+    margin: 10px, 0, 10px; }
+  #section-2 #section-2-container h5 {
+    margin: 10px, 0, 10px; }
   #section-2 #section-2-container #section-2-content {
     grid-area: para; }
 
