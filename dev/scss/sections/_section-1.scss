@@ -1,20 +1,62 @@
 /* =============
     Sectoin 1
 ============= */
-#section-1{
+#section-1-image{
+    // img{
+    //     width: 100%;
+    // }
+    position: relative;
+
     background-image: url('../img/section-1/hero.png');
     background-size: cover;
     background-position: center;
-    height: 100vh;
-    margin-top: 128px;
+    height: 370px;
 
-    h1{
-        padding: 10% 0 0 20%;
-        font-family: 'Kalam', cursive;
-        font-weight: 700;
-         font-size: rem-calc(45);
-        color: $blue;
+    @include md {
+        height: 512px;
+      }
+    
+    @include lg {
+        height: 683px;
     }
 }
 
+#section-1-content{
+    display: grid;
+    grid-template-columns: 20% auto 20;
+    grid-template-areas: ". section-1-content .";
 
+    #section-1-header{
+        grid-area: section-1-content;
+        justify-self: center;
+
+        h1{
+            font-family: 'Kalam', cursive;
+            font-weight: 700;
+            font-size: rem-calc(45);
+            color: $blue;
+
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            width: 100%;
+            // margin: 0 auto;
+            // width: 300px;
+            // height: 50px;
+
+            @include md {
+                font-size: rem-calc(70);
+                position: absolute;
+                top: 40px;
+                left: 40px;
+              }
+            
+            @include lg {
+                font-size: rem-calc(100);
+                position: absolute;
+                top: 50px;
+                left: 60px;
+            }
+        }
+    }
+}

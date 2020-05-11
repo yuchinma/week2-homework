@@ -328,10 +328,6 @@ ul {
 body {
   font-family: 'Kalam', cursive; }
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  padding: 0; }
-
 /* =============
     Buttons
 ============= */
@@ -356,48 +352,11 @@ textarea {
 /* =============
     Header
 ============= */
-header {
-  background-color: #262F4C;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  color: #262F4C; }
-  header > div {
-    display: grid;
-    grid-template-columns: 80% auto;
-    grid-template-areas: "logo burger" "nav nav"; }
-    @media (min-width: 992px) {
-      header > div {
-        grid-template-columns: 20% auto;
-        grid-template-areas: "logo nav"; } }
-    header > div #logo-container {
-      align-items: center;
-      display: flex;
-      grid-area: burger;
-      justify-content: flex-end;
-      padding: 20px; }
-      @media (min-width: 992px) {
-        header > div #logo-container {
-          display: none !important; } }
-      header > div #logo-container i {
-        cursor: pointer; }
-    header > div #nav-container {
-      background-color: white;
-      display: none;
-      grid-area: nav;
-      padding: 20px; }
-      @media (min-width: 992px) {
-        header > div #nav-container {
-          background-color: white;
-          display: none !important; } }
 /* =============
     Footer
 ============= */
 footer {
   background-color: #262F4C;
-  width: 100%;
-  height: 45px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "logo . copyright"; }
@@ -414,25 +373,15 @@ footer {
     footer {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-template-areas: ". logo copyright";
-      height: 60px; }
+      grid-template-areas: ". logo copyright"; }
       footer #footer-image {
         justify-self: center; } }
 /* =============
     Sectoin 1
 ============= */
-#section-1-image {
-  position: relative;
-  background-image: url("../img/section-1/hero.png");
-  background-size: cover;
-  background-position: center;
-  height: 370px; }
-  @media (min-width: 768px) {
-    #section-1-image {
-      height: 512px; } }
-  @media (min-width: 992px) {
-    #section-1-image {
-      height: 683px; } }
+#section-1-image img {
+  width: 100%; }
+
 #section-1-content {
   display: grid;
   grid-template-columns: 20% auto 20;
@@ -443,75 +392,28 @@ footer {
     #section-1-content #section-1-header h1 {
       font-family: 'Kalam', cursive;
       font-weight: 700;
-      font-size: 2.8125rem;
-      color: #262F4C;
-      position: absolute;
-      top: 30px;
-      left: 30px;
-      width: 100%; }
-      @media (min-width: 768px) {
-        #section-1-content #section-1-header h1 {
-          font-size: 4.375rem;
-          position: absolute;
-          top: 40px;
-          left: 40px; } }
-      @media (min-width: 992px) {
-        #section-1-content #section-1-header h1 {
-          font-size: 6.25rem;
-          position: absolute;
-          top: 50px;
-          left: 60px; } }
+      font-size: 2em; }
+
 /* =============
     Sectoin 2
 ============= */
-#section-2 aside {
-  background-image: url("../img/section-2/elephant.png");
-  background-size: cover;
-  background-position: center;
-  height: 480px; }
-  @media (min-width: 768px) {
-    #section-2 aside {
-      height: 417px; } }
-  @media (min-width: 992px) {
-    #section-2 aside {
-      height: 737px;
-      margin-left: 11.5px; } }
+#section-2 aside img {
+  width: 100%; }
+
 #section-2 #section-2-container {
   display: grid;
   grid-template-columns: 15px auto 15px;
   grid-template-areas: ". para ."; }
   #section-2 #section-2-container #section-2-content {
     grid-area: para; }
-    #section-2 #section-2-container #section-2-content h3 {
-      font-size: 1.75rem;
-      text-align: center;
-      padding: 10px;
-      color: #262F4C; }
-      @media (min-width: 768px) {
-        #section-2 #section-2-container #section-2-content h3 {
-          text-align: left; } }
-      @media (min-width: 992px) {
-        #section-2 #section-2-container #section-2-content h3 {
-          text-align: left; } }
-    #section-2 #section-2-container #section-2-content h5 {
-      font-size: 1.125rem;
-      text-align: center;
-      font-weight: 400;
-      padding: 10px;
-      color: #262F4C; }
-      @media (min-width: 768px) {
-        #section-2 #section-2-container #section-2-content h5 {
-          text-align: left; } }
-      @media (min-width: 992px) {
-        #section-2 #section-2-container #section-2-content h5 {
-          text-align: left; } }
+
 @media (min-width: 768px) {
   #section-2 {
     display: grid;
     grid-template-columns: 35% auto;
     grid-template-areas: "img para";
-    margin-top: 55px;
-    margin-bottom: 55px; }
+    margin-top: 20px;
+    margin-bottom: 20px; }
     #section-2 aside {
       grid-area: img; }
     #section-2 #section-2-content {
@@ -520,25 +422,14 @@ footer {
 @media (min-width: 992px) {
   #section-2 {
     display: grid;
-    grid-template-columns: 50% auto;
-    margin-top: 50px;
-    margin-bottom: 50px; } }
+    grid-template-columns: 45% auto; } }
 
 /* =============
     Sectoin 3
 ============= */
-#section-3 {
-  background-image: url("../img/section-3/beach.png");
-  background-size: cover;
-  background-position: -230px, 0;
-  height: 511px; }
-  @media (min-width: 768px) {
-    #section-3 {
-      background-position: left;
-      height: 511px; } }
-  @media (min-width: 992px) {
-    #section-3 {
-      height: 682px; } }
+#section-3 img {
+  width: 100%; }
+
 /* =============
     Sectoin 4
 ============= */
@@ -548,56 +439,37 @@ footer {
   grid-template-areas: ". section-4 ."; }
   #section-4 #section-4-content {
     grid-area: section-4; }
-    #section-4 #section-4-content h2 {
-      font-size: 1.5625rem;
-      text-align: center;
-      padding: 10px;
-      color: #262F4C; }
-      @media (min-width: 768px) {
-        #section-4 #section-4-content h2 {
-          font-size: 2.25rem;
-          text-align: center;
-          padding: 10px; } }
-      @media (min-width: 992px) {
-        #section-4 #section-4-content h2 {
-          font-size: 3.5rem;
-          text-align: center;
-          padding: 10px; } }
   @media (min-width: 768px) {
     #section-4 {
-      grid-template-columns: 15% auto 15%; } }
+      grid-template-columns: 20% auto 20%; } }
   @media (min-width: 992px) {
     #section-4 {
       grid-template-columns: 10% auto 10%; } }
+#section-4-gallery img {
+  width: 100%; }
+
 #section-4-gallery ul {
   grid-area: section-4-gallery;
-  display: grid;
-  grid-template-rows: repeat(3, 290px);
-  grid-template-areas: "temple" "food" "fireshow";
   gap: 20px; }
-  #section-4-gallery ul li {
-    background-size: cover;
-    background-position: center; }
-  #section-4-gallery ul #img-1 {
-    background-image: url("../img/section-4/temple.png");
-    grid-area: temple; }
-  #section-4-gallery ul #img-2 {
-    background-image: url("../img/section-4/food.jpg");
-    grid-area: food; }
-  #section-4-gallery ul #img-3 {
-    background-image: url("../img/section-4/fireshow.jpg");
-    grid-area: fireshow; }
   @media (min-width: 768px) {
     #section-4-gallery ul {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(3, 340px);
-      grid-template-areas: "temple temple" "temple temple" "food fireshow"; } }
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-areas: "temple temple" "temple temple" "food firework";
+      gap: 10px; }
+      #section-4-gallery ul #img-1 {
+        grid-area: temple; }
+      #section-4-gallery ul #img-2 {
+        grid-area: food; }
+      #section-4-gallery ul #img-3 {
+        grid-area: firework; } }
   @media (min-width: 992px) {
     #section-4-gallery ul {
       grid-template-columns: 70% 30%;
-      grid-template-rows: repeat(2, 340px);
-      grid-template-areas: "temple food" "temple fireshow"; } }
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: "temple food" "temple firework";
+      gap: 10px; } }
 /* =============
     Sectoin 5
 ============= */
@@ -607,21 +479,6 @@ footer {
   grid-template-areas: ". section-5 ."; }
   #section-5 aside img {
     width: 100%; }
-  #section-5 p {
-    font-size: 1.1875rem;
-    text-align: justify;
-    line-height: 1.5625rem;
-    color: #262F4C; }
-    @media (min-width: 768px) {
-      #section-5 p {
-        font-size: 1.25rem;
-        text-align: justify;
-        line-height: 1.5625rem; } }
-    @media (min-width: 992px) {
-      #section-5 p {
-        font-size: 1.4375rem;
-        text-align: justify;
-        line-height: 1.875rem; } }
   #section-5 #section-5-container {
     grid-area: section-5; }
   @media (min-width: 768px) {

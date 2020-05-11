@@ -1,7 +1,6 @@
 /* =============
     Header
 ============= */
-<<<<<<< HEAD
 header {
     background-color: $blue;
     left: 0;
@@ -9,8 +8,6 @@ header {
     top: 0;
     width: 100%;
     color: $blue;
-    border: 1px solid red;
-    z-index: 1000;
 
     >div{
         display: grid;
@@ -25,16 +22,10 @@ header {
         }
 
         #logo-container{
-            grid-area: logo;
-            padding: 20px;
-        }
-
-        #burger-container{
-            grid-area: burger;
             align-items: center;
-            display: flex !important;
+            display: flex;
+            grid-area: burger;
             justify-content: flex-end;
-            color: $white;
             padding: 20px;
 
             @include lg{
@@ -48,16 +39,14 @@ header {
 
         #nav-container{
             background-color: white;
-            display: none !important;
+            display: none;
             grid-area: nav;
             padding: 20px;
 
             @include lg{
-                background-color: $blue;
-                display: block !important;
+                background-color: white;
+                display: none !important;
             }
         }
     }
 }
-=======
->>>>>>> parent of 732ac13... small updates
