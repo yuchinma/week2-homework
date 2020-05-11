@@ -19,6 +19,7 @@
         
         @include lg {
             height: 737px;
+            margin-left: 11.5px;
         }
     }
 
@@ -27,16 +28,36 @@
         grid-template-columns: 15px auto 15px;
         grid-template-areas: ". para .";
 
-        h3{
-            margin: 10px, 0, 10px;
-        }
-
-        h5{
-            margin: 10px, 0, 10px;
-        }
-
         #section-2-content{
             grid-area: para;
+
+            h3{
+                font-size: rem-calc(28);
+                text-align: center;
+                padding: 10px;
+
+                @include md{
+                text-align: left;
+                }
+
+                @include lg{
+                text-align: left;
+                }
+            }
+    
+            h5{
+                font-size: rem-calc(18);
+                text-align: center;
+                padding: 10px;
+
+                @include md{
+                text-align: left;
+                }
+
+                @include lg{
+                text-align: left;
+                }
+            }
         }
     }
 
@@ -44,8 +65,8 @@
         display: grid;
         grid-template-columns: 35% auto;
         grid-template-areas: "img para";
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 55px;
+        margin-bottom: 55px;
 
         aside{
             grid-area: img;
@@ -58,6 +79,8 @@
 
     @include lg{
         display: grid;
-        grid-template-columns: 45% auto;
+        grid-template-columns: 50% auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 }

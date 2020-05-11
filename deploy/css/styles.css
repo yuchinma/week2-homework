@@ -435,25 +435,41 @@ footer {
       height: 417px; } }
   @media (min-width: 992px) {
     #section-2 aside {
-      height: 737px; } }
+      height: 737px;
+      margin-left: 11.5px; } }
 #section-2 #section-2-container {
   display: grid;
   grid-template-columns: 15px auto 15px;
   grid-template-areas: ". para ."; }
-  #section-2 #section-2-container h3 {
-    margin: 10px, 0, 10px; }
-  #section-2 #section-2-container h5 {
-    margin: 10px, 0, 10px; }
   #section-2 #section-2-container #section-2-content {
     grid-area: para; }
-
+    #section-2 #section-2-container #section-2-content h3 {
+      font-size: 1.75rem;
+      text-align: center;
+      padding: 10px; }
+      @media (min-width: 768px) {
+        #section-2 #section-2-container #section-2-content h3 {
+          text-align: left; } }
+      @media (min-width: 992px) {
+        #section-2 #section-2-container #section-2-content h3 {
+          text-align: left; } }
+    #section-2 #section-2-container #section-2-content h5 {
+      font-size: 1.125rem;
+      text-align: center;
+      padding: 10px; }
+      @media (min-width: 768px) {
+        #section-2 #section-2-container #section-2-content h5 {
+          text-align: left; } }
+      @media (min-width: 992px) {
+        #section-2 #section-2-container #section-2-content h5 {
+          text-align: left; } }
 @media (min-width: 768px) {
   #section-2 {
     display: grid;
     grid-template-columns: 35% auto;
     grid-template-areas: "img para";
-    margin-top: 20px;
-    margin-bottom: 20px; }
+    margin-top: 55px;
+    margin-bottom: 55px; }
     #section-2 aside {
       grid-area: img; }
     #section-2 #section-2-content {
@@ -462,7 +478,9 @@ footer {
 @media (min-width: 992px) {
   #section-2 {
     display: grid;
-    grid-template-columns: 45% auto; } }
+    grid-template-columns: 50% auto;
+    margin-top: 50px;
+    margin-bottom: 50px; } }
 
 /* =============
     Sectoin 3
