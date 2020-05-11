@@ -506,9 +506,23 @@ footer {
   grid-template-areas: ". section-4 ."; }
   #section-4 #section-4-content {
     grid-area: section-4; }
+    #section-4 #section-4-content h2 {
+      font-size: 1.5625rem;
+      text-align: center;
+      padding: 10px; }
+      @media (min-width: 768px) {
+        #section-4 #section-4-content h2 {
+          font-size: 2.25rem;
+          text-align: center;
+          padding: 10px; } }
+      @media (min-width: 992px) {
+        #section-4 #section-4-content h2 {
+          font-size: 3.5rem;
+          text-align: center;
+          padding: 10px; } }
   @media (min-width: 768px) {
     #section-4 {
-      grid-template-columns: 20% auto 20%; } }
+      grid-template-columns: 15% auto 15%; } }
   @media (min-width: 992px) {
     #section-4 {
       grid-template-columns: 10% auto 10%; } }
@@ -535,14 +549,12 @@ footer {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(3, 340px);
-      grid-template-areas: "temple temple" "temple temple" "food fireshow";
-      gap: 10px; } }
+      grid-template-areas: "temple temple" "temple temple" "food fireshow"; } }
   @media (min-width: 992px) {
     #section-4-gallery ul {
       grid-template-columns: 70% 30%;
       grid-template-rows: repeat(2, 340px);
-      grid-template-areas: "temple food" "temple fireshow";
-      gap: 10px; } }
+      grid-template-areas: "temple food" "temple fireshow"; } }
 /* =============
     Sectoin 5
 ============= */

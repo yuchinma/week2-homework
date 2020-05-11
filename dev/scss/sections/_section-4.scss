@@ -8,10 +8,28 @@
 
     #section-4-content{
         grid-area: section-4;
+
+        h2{
+            font-size: rem-calc(25);
+            text-align: center;
+            padding: 10px;
+
+            @include md{
+                font-size: rem-calc(36);
+                text-align: center;
+                padding: 10px;
+            }
+
+            @include lg{
+                font-size: rem-calc(56);
+                text-align: center;
+                padding: 10px;
+            }
+        }
     }
 
     @include md{
-        grid-template-columns: 20% auto 20%;
+        grid-template-columns: 15% auto 15%;
     }
 
     @include lg{
@@ -63,8 +81,6 @@
             "temple temple"
             "temple temple"
             "food fireshow";
-
-            gap: 10px;
         }
 
         @include lg{
@@ -74,8 +90,6 @@
             grid-template-areas: 
             "temple food"
             "temple fireshow";
-
-            gap: 10px;
         }
     }
 }
