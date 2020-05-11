@@ -360,6 +360,7 @@ textarea {
 /* =============
     Header
 ============= */
+<<<<<<< HEAD
 header {
   background-color: #262F4C;
   left: 0;
@@ -401,6 +402,8 @@ header {
         header > div #nav-container {
           background-color: #262F4C;
           display: block !important; } }
+=======
+>>>>>>> parent of 732ac13... small updates
 /* =============
     Footer
 ============= */
