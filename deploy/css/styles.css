@@ -358,12 +358,11 @@ textarea {
 ============= */
 header {
   background-color: #262F4C;
-  left: 0;
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   color: #262F4C;
-  border: 1px solid red;
   z-index: 1000; }
   header > div {
     display: grid;
@@ -427,46 +426,36 @@ footer {
 /* =============
     Sectoin 1
 ============= */
-#section-1-image {
-  position: relative;
+#section-1-header {
   background-image: url("../img/section-1/hero.png");
   background-size: cover;
   background-position: center;
-  height: 370px; }
+  height: 370px;
+  margin-top: 80px;
+  grid-area: section-1-content;
+  justify-self: center; }
   @media (min-width: 768px) {
-    #section-1-image {
-      height: 512px; } }
+    #section-1-header {
+      height: 512px;
+      margin-top: 80px; } }
   @media (min-width: 992px) {
-    #section-1-image {
-      height: 683px; } }
-#section-1-content {
-  display: grid;
-  grid-template-columns: 20% auto 20;
-  grid-template-areas: ". section-1-content ."; }
-  #section-1-content #section-1-header {
-    grid-area: section-1-content;
-    justify-self: center; }
-    #section-1-content #section-1-header h1 {
-      font-family: 'Kalam', cursive;
-      font-weight: 700;
-      font-size: 2.8125rem;
-      color: #262F4C;
-      position: absolute;
-      top: 30px;
-      left: 30px;
-      width: 100%; }
-      @media (min-width: 768px) {
-        #section-1-content #section-1-header h1 {
-          font-size: 4.375rem;
-          position: absolute;
-          top: 40px;
-          left: 40px; } }
-      @media (min-width: 992px) {
-        #section-1-content #section-1-header h1 {
-          font-size: 6.25rem;
-          position: absolute;
-          top: 50px;
-          left: 60px; } }
+    #section-1-header {
+      height: 683px;
+      margin-top: 125px; } }
+  #section-1-header h1 {
+    font-family: 'Kalam', cursive;
+    font-weight: 700;
+    font-size: 2.8125rem;
+    color: #262F4C;
+    padding: 8% 0 0 8%; }
+    @media (min-width: 768px) {
+      #section-1-header h1 {
+        font-size: 4.375rem;
+        padding: 5% 0 0 5%; } }
+    @media (min-width: 992px) {
+      #section-1-header h1 {
+        font-size: 6.25rem;
+        padding: 4% 0 0 5%; } }
 /* =============
     Sectoin 2
 ============= */
@@ -536,7 +525,7 @@ footer {
 #section-3 {
   background-image: url("../img/section-3/beach.png");
   background-size: cover;
-  background-position: -230px, 0;
+  background-position: right center;
   height: 511px; }
   @media (min-width: 768px) {
     #section-3 {

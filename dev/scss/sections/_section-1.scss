@@ -1,62 +1,42 @@
 /* =============
     Sectoin 1
 ============= */
-#section-1-image{
-    // img{
-    //     width: 100%;
-    // }
-    position: relative;
+#section-1-header{
 
     background-image: url('../img/section-1/hero.png');
     background-size: cover;
     background-position: center;
     height: 370px;
+    margin-top: 80px;
 
     @include md {
         height: 512px;
+        margin-top: 80px;
       }
     
     @include lg {
         height: 683px;
+        margin-top: 125px;
     }
-}
 
-#section-1-content{
-    display: grid;
-    grid-template-columns: 20% auto 20;
-    grid-template-areas: ". section-1-content .";
+    grid-area: section-1-content;
+    justify-self: center;
 
-    #section-1-header{
-        grid-area: section-1-content;
-        justify-self: center;
+    h1{
+        font-family: 'Kalam', cursive;
+        font-weight: 700;
+        font-size: rem-calc(45);
+        color: $blue;
+        padding: 8% 0 0 8%;
 
-        h1{
-            font-family: 'Kalam', cursive;
-            font-weight: 700;
-            font-size: rem-calc(45);
-            color: $blue;
-
-            position: absolute;
-            top: 30px;
-            left: 30px;
-            width: 100%;
-            // margin: 0 auto;
-            // width: 300px;
-            // height: 50px;
-
-            @include md {
-                font-size: rem-calc(70);
-                position: absolute;
-                top: 40px;
-                left: 40px;
-              }
-            
-            @include lg {
-                font-size: rem-calc(100);
-                position: absolute;
-                top: 50px;
-                left: 60px;
-            }
+        @include md {
+            font-size: rem-calc(70);
+            padding: 5% 0 0 5%;
+        }
+        
+        @include lg {
+            font-size: rem-calc(100);
+            padding: 4% 0 0 5%;
         }
     }
 }
