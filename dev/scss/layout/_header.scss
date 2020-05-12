@@ -8,6 +8,8 @@ header {
     top: 0;
     width: 100%;
     color: $blue;
+    border: 1px solid red;
+    z-index: 1000;
 
     >div{
         display: grid;
@@ -22,10 +24,16 @@ header {
         }
 
         #logo-container{
-            align-items: center;
-            display: flex;
+            grid-area: logo;
+            padding: 20px;
+        }
+
+        #burger-container{
             grid-area: burger;
+            align-items: center;
+            display: flex !important;
             justify-content: flex-end;
+            color: $white;
             padding: 20px;
 
             @include lg{
@@ -39,13 +47,13 @@ header {
 
         #nav-container{
             background-color: white;
-            display: none;
+            display: none !important;
             grid-area: nav;
             padding: 20px;
 
             @include lg{
-                background-color: white;
-                display: none !important;
+                background-color: $blue;
+                display: block !important;
             }
         }
     }

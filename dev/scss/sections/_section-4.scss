@@ -51,32 +51,11 @@
         "temple"
         "food"
         "fireshow";
-        
         gap: 20px;
 
-        li{
-            background-size: cover;
-            background-position: center;
-        }
-
-        #img-1{
-            background-image: url('../img/section-4/temple.png');
-            grid-area: temple;
-        }
-        #img-2{
-            background-image: url('../img/section-4/food.jpg');
-            grid-area: food;
-        }
-        #img-3{
-            background-image: url('../img/section-4/fireshow.jpg');
-            grid-area: fireshow;
-        }
-
         @include md{
-            display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(3, 340px);
-
             grid-template-areas: 
             "temple temple"
             "temple temple"
@@ -86,10 +65,33 @@
         @include lg{
             grid-template-columns: 70% 30%;
             grid-template-rows: repeat(2, 340px);
-
             grid-template-areas: 
             "temple food"
             "temple fireshow";
+        }
+
+        li{
+            background-size: cover;
+            background-position: center;
+        }
+
+        #img-1{
+            background-image: url('../img/section-4/temple.png');
+            grid-area: temple;
+            background-position: center -15px;
+
+            @include xl{
+                // background-position: center top;
+                background-position: center -30px;
+            }
+        }
+        #img-2{
+            background-image: url('../img/section-4/food.jpg');
+            grid-area: food;
+        }
+        #img-3{
+            background-image: url('../img/section-4/fireshow.jpg');
+            grid-area: fireshow;
         }
     }
 }

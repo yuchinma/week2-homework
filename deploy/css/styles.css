@@ -362,7 +362,9 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  color: #262F4C; }
+  color: #262F4C;
+  border: 1px solid red;
+  z-index: 1000; }
   header > div {
     display: grid;
     grid-template-columns: 80% auto;
@@ -372,25 +374,29 @@ header {
         grid-template-columns: 20% auto;
         grid-template-areas: "logo nav"; } }
     header > div #logo-container {
-      align-items: center;
-      display: flex;
+      grid-area: logo;
+      padding: 20px; }
+    header > div #burger-container {
       grid-area: burger;
+      align-items: center;
+      display: flex !important;
       justify-content: flex-end;
+      color: #fff;
       padding: 20px; }
       @media (min-width: 992px) {
-        header > div #logo-container {
+        header > div #burger-container {
           display: none !important; } }
-      header > div #logo-container i {
+      header > div #burger-container i {
         cursor: pointer; }
     header > div #nav-container {
       background-color: white;
-      display: none;
+      display: none !important;
       grid-area: nav;
       padding: 20px; }
       @media (min-width: 992px) {
         header > div #nav-container {
-          background-color: white;
-          display: none !important; } }
+          background-color: #262F4C;
+          display: block !important; } }
 /* =============
     Footer
 ============= */
@@ -575,21 +581,8 @@ footer {
   grid-template-rows: repeat(3, 290px);
   grid-template-areas: "temple" "food" "fireshow";
   gap: 20px; }
-  #section-4-gallery ul li {
-    background-size: cover;
-    background-position: center; }
-  #section-4-gallery ul #img-1 {
-    background-image: url("../img/section-4/temple.png");
-    grid-area: temple; }
-  #section-4-gallery ul #img-2 {
-    background-image: url("../img/section-4/food.jpg");
-    grid-area: food; }
-  #section-4-gallery ul #img-3 {
-    background-image: url("../img/section-4/fireshow.jpg");
-    grid-area: fireshow; }
   @media (min-width: 768px) {
     #section-4-gallery ul {
-      display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(3, 340px);
       grid-template-areas: "temple temple" "temple temple" "food fireshow"; } }
@@ -598,6 +591,23 @@ footer {
       grid-template-columns: 70% 30%;
       grid-template-rows: repeat(2, 340px);
       grid-template-areas: "temple food" "temple fireshow"; } }
+  #section-4-gallery ul li {
+    background-size: cover;
+    background-position: center; }
+  #section-4-gallery ul #img-1 {
+    background-image: url("../img/section-4/temple.png");
+    grid-area: temple;
+    background-position: center -15px; }
+    @media (min-width: 1200px) {
+      #section-4-gallery ul #img-1 {
+        background-position: center -30px; } }
+  #section-4-gallery ul #img-2 {
+    background-image: url("../img/section-4/food.jpg");
+    grid-area: food; }
+  #section-4-gallery ul #img-3 {
+    background-image: url("../img/section-4/fireshow.jpg");
+    grid-area: fireshow; }
+
 /* =============
     Sectoin 5
 ============= */
