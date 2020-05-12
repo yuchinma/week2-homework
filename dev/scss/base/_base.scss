@@ -9,6 +9,12 @@ ul{
     }
 }
 
+hr{
+    border: none;
+    height: 4px;
+    background-color: $blue;
+}
+
 // .show-for-md{
 //     display: none;
 //     @include md{

@@ -322,6 +322,11 @@ ul {
   ul li {
     list-style: none; }
 
+hr {
+  border: none;
+  height: 4px;
+  background-color: #262F4C; }
+
 /* =============
     Typography
 ============= */
