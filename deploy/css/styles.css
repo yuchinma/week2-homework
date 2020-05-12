@@ -358,6 +358,33 @@ textarea {
 /* =============
     Navigation
 ============= */
+#nav-container ul {
+  height: 100%;
+  text-align: right; }
+  @media (min-width: 992px) {
+    #nav-container ul {
+      display: flex;
+      justify-content: flex-end; } }
+  #nav-container ul li {
+    margin-bottom: 20px; }
+    @media (min-width: 992px) {
+      #nav-container ul li {
+        align-items: center;
+        display: flex;
+        margin: 0px 30px 0 0; } }
+    #nav-container ul li a:link,
+    #nav-container ul li a:visited {
+      color: white;
+      text-decoration: none;
+      transition: 0.25s; }
+    #nav-container ul li a:hover {
+      color: #262F4C; }
+      @media (min-width: 992px) {
+        #nav-container ul li a:hover {
+          color: #62cbfc; } }
+    #nav-container ul li a:active {
+      color: #ffb1b1; }
+
 /* =============
     Header
 ============= */
@@ -369,6 +396,8 @@ header {
   width: 100%;
   color: #262F4C;
   z-index: 1000; }
+  header li {
+    font-size: 1.875rem; }
   header > div {
     display: grid;
     grid-template-columns: 80% auto;
@@ -446,7 +475,7 @@ footer {
   @media (min-width: 992px) {
     #section-1-header {
       height: 683px;
-      margin-top: 125px; } }
+      margin-top: 100px; } }
   #section-1-header h1 {
     font-family: 'Kalam', cursive;
     font-weight: 700;
