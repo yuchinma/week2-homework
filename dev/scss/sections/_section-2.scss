@@ -40,10 +40,6 @@
                 @include md{
                 text-align: left;
                 }
-
-                @include lg{
-                text-align: left;
-                }
             }
     
             h5{
@@ -54,10 +50,6 @@
                 color: $blue;
 
                 @include md{
-                text-align: left;
-                }
-
-                @include lg{
                 text-align: left;
                 }
             }

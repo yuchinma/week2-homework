@@ -519,9 +519,6 @@ footer {
       @media (min-width: 768px) {
         #section-2 #section-2-container #section-2-content h3 {
           text-align: left; } }
-      @media (min-width: 992px) {
-        #section-2 #section-2-container #section-2-content h3 {
-          text-align: left; } }
     #section-2 #section-2-container #section-2-content h5 {
       font-size: 1.125rem;
       text-align: center;
@@ -529,9 +526,6 @@ footer {
       padding: 10px;
       color: #262F4C; }
       @media (min-width: 768px) {
-        #section-2 #section-2-container #section-2-content h5 {
-          text-align: left; } }
-      @media (min-width: 992px) {
         #section-2 #section-2-container #section-2-content h5 {
           text-align: left; } }
 @media (min-width: 768px) {
@@ -560,7 +554,9 @@ footer {
   background-image: url("../img/section-3/beach.png");
   background-size: cover;
   background-position: right center;
-  height: 511px; }
+  height: 511px;
+  margin-top: 35px;
+  margin-bottom: 35px; }
   @media (min-width: 768px) {
     #section-3 {
       background-position: left;
